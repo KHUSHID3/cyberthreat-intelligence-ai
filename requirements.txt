@@ -1,0 +1,33 @@
+# Core
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
+
+# Dataset (always fetched via library/API — never static download)
+datasets==2.21.0
+huggingface-hub==0.24.6
+
+# Machine Learning / NLP
+scikit-learn==1.5.1
+joblib==1.4.2
+scipy==1.14.0
+
+# MongoDB (local Community Server only)
+pymongo==4.8.0
+
+# Streamlit application
+streamlit==1.37.1
+plotly==5.23.0
+
+# Visualization (notebook + Streamlit)
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Notebook
+jupyter==1.0.0
+ipykernel==6.29.5
+notebook==7.2.1
+
+# Utilities
+tqdm==4.66.5
+python-dateutil==2.9.0.post0

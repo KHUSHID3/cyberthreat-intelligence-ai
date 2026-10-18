@@ -1,0 +1,129 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+.conda/
+*.conda
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Project-specific: generated artifacts (models, vectorizers, metadata)
+artifacts/models/*
+!artifacts/models/.gitkeep
+artifacts/vectorizers/*
+!artifacts/vectorizers/.gitkeep
+artifacts/metadata/*
+!artifacts/metadata/.gitkeep
+
+# Data (dataset is always fetched via Hugging Face datasets library)
+data/*
+!data/.gitkeep
+*.csv
+*.json
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.joblib
+!artifacts/**/*.joblib   # allow versioned model artifacts if you decide to track them later
+
+# Logs & reports (optional – keep methodology if desired)
+logs/
+*.log
+reports/evaluation_report.md
+# reports/methodology.md   # uncomment if you want to ignore it
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Testing / coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Other
+*.bak
+*.tmp
+tmp/
+temp/
